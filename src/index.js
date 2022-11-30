@@ -1,8 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Clock from './App';
+import Button from './Button';
 import reportWebVitals from './reportWebVitals';
+
+
+class App extends React.Component {
+  render () {
+    return (
+        <div className='wrapper'>
+          <Clock />
+          <Button />
+        </div>
+    )
+  }
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
